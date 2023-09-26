@@ -7,10 +7,75 @@
     <!-- Bootstrap CSS link -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Custom CSS -->
+
+    <!-- <style>
+
+        
+    </style> -->
+
+
+
+    <!-- Basic Style -->
     <style>
         /* Add your custom CSS here */
+        
+        
         body {
-            background-color: #f5f5f5;
+            background-color: #f9f9f9; /* Light gray background */
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #ffffff;
+            border-bottom: 1px solid #ddd; /* Add a subtle border at the bottom of the navbar */
+            border-radius: 0; /* Remove any border-radius to make it flat */
+        }
+
+        .navbar-brand {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333; /* Darken the navbar brand text */
+        }
+
+        .navbar-nav .nav-link {
+            color: #555; /* Slightly darker link text color */
+        }
+
+        .section-header {
+            font-size: 36px; /* Slightly larger section headers */
+            margin-bottom: 20px;
+        }
+
+        .section-content {
+            background-color: #fff;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for sections */
+            border-radius: 10px; /* Add rounded corners to sections */
+        }
+
+        .work-in-progress {
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            border-top-left-radius: 5px; /* Add rounded corners to the top left */
+            border-top-right-radius: 5px; /* Add rounded corners to the top right */
+        }
+
+        .btn {
+            background-color: #007bff; /* Blue button background color */
+            color: #fff; /* White button text color */
+            border-radius: 5px; /* Add rounded corners to buttons */
+            transition: background-color 0.3s ease; /* Smooth color transition on hover */
+        }
+
+        .btn:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+        /* body {
+            background-color: #ffffff;
         }
         .navbar {
             background-color: #fff;
@@ -32,6 +97,147 @@
             margin-bottom: 30px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
+        .work-in-progress {
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+        } */
+    </style>
+
+
+
+    <style>
+/* Add your custom CSS here */
+/* Add your custom CSS here */
+body {
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333; /* Dark gray text */
+    font-family: "Courier New", Courier, monospace;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: #f8f9fa; /* Light gray navbar background */
+    border: none;
+    border-radius: 0;
+    margin-bottom: 30px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Dark gray navbar brand text */
+}
+
+.navbar-nav .nav-link {
+    color: #333; /* Dark gray navbar links */
+}
+
+/* Terminal-like styles for section headers */
+.section-header {
+    font-size: 28px;
+    margin-bottom: 20px;
+    background-color: #333; /* Dark gray background */
+    color: #00ff00; /* Green text */
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.section-header.about {
+    background-color: #ffcc00; /* Yellow background for "About" section */
+    color: #333; /* Dark gray text */
+}
+
+.section-header.education {
+    background-color: #0077cc; /* Blue background for "Education" section */
+    color: #fff; /* White text */
+}
+
+.section-header.experience {
+    background-color: #ff6600; /* Orange background for "Experience" section */
+    color: #fff; /* White text */
+}
+
+.section-header.projects {
+    background-color: #9933cc; /* Purple background for "Projects" section */
+    color: #fff; /* White text */
+}
+
+.section-header.skills {
+    background-color: #33cc33; /* Green background for "Skills" section */
+    color: #fff; /* White text */
+}
+
+.section-header.resume {
+    background-color: #ff3300; /* Red background for "Resume" section */
+    color: #fff; /* White text */
+}
+
+.section-header.contact {
+    background-color: #0099cc; /* Light blue background for "Contact" section */
+    color: #fff; /* White text */
+}
+
+.section-content {
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* CSS for Work in Progress Indicator */
+.work-in-progress {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional styles for buttons */
+.btn {
+    background-color: #007bff; /* Blue button background */
+    color: #fff; /* White button text color */
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Terminal-like styles */
+.code {
+    font-family: "Courier New", Courier, monospace;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333; /* Dark gray text */
+    padding: 10px;
+    border-radius: 5px;
+    white-space: pre-wrap;
+    overflow-x: auto;
+    max-height: 400px;
+}
+
+/* Links */
+a {
+    color: #007bff; /* Blue links */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
     </style>
 </head>
 <body>
@@ -72,7 +278,11 @@
         </div>
     </div>
 </nav>
-
+<div class="work-in-progress">
+    <p>Hello Recruiters! 👋 </p>
+    <p>Please be informed that this page is a work in progress and receives periodic updates whenever I have the opportunity. </p>
+    <p>Thank you for your understanding.</p>
+</div>
 <!-- About Section -->
 <section id="about" class="py-5">
     <div class="container">
@@ -80,7 +290,7 @@
         <div class="section-content">
             <p>
 
-                As a Master's candidate in Electrical and Computer Engineering at Northeastern University with a concentration in Computer Vision and Machine Learning Algorithms, I have a strong technical foundation in programming languages such as Python, C, C++, SQL, and MATLAB. My expertise in libraries and frameworks such as Pandas, NumPy, OpenCV, Tensorflow, Keras, and PySpark has allowed me to deliver meaningful results in various projects and work experiences.
+                I'm a Master's candidate in Electrical and Computer Engineering at Northeastern University with a concentration in Computer Vision and Machine Learning Algorithms, I have a strong technical foundation in programming languages such as Python, C, C++, SQL, and MATLAB. My expertise in libraries and frameworks such as Pandas, NumPy, OpenCV, Tensorflow, Keras, and PySpark has allowed me to deliver meaningful results in various projects and work experiences.
 
                 I have hands-on experience in developing and deploying machine learning pipelines, performing data analysis and visualization, building POC applications for various ML use cases. At Accenture, I worked as an Application Developer with role into Machine Learning Ops and Python Developer, where I collaborated with cross-functional teams on various projects.
                 
