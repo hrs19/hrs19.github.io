@@ -4,53 +4,365 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harshit Sampgaon - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* Add your custom CSS here */
+        body {
+            background-color: #f5f5f5;
+        }
+        .navbar {
+            background-color: #fff;
+        }
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbar-nav .nav-link {
+            color: #333;
+        }
+        .section-header {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .section-content {
+            background-color: #fff;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Harshit Sampgaon</h1>
-        <p>Boston, MA </p>
-        <!-- <p>Boston, MA | (857) 376-1224 | <a href="mailto:sampgaon.h@northeastern.edu">sampgaon.h@northeastern.edu</a></p> -->
-        <p><a href="https://www.linkedin.com/in/harshitsampgaon" target="_blank">LinkedIn</a> | <a href="https://github.com/hrs19" target="_blank">GitHub</a></p>
-        <p>Available from July 2024</p>
-        <p>Portfolio update in progress</p>
 
-    </header>
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">Harshit Sampgaon</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience">Work Experience</a>
 
-    <section id="education">
-        <h2>Education</h2>
-        <div class="education-entry">
-            <h3>Northeastern University, Boston, MA</h3>
-            <p>May 2024</p>
-            <p>Master of Science in Electrical and Computer Engineering</p>
-            <p>GPA: 4/4</p>
-            <p>Concentration: Computer Vision and Machine Learning Algorithms</p>
-            <p>Relevant Courses: Algorithms, Machine Learning, Computer Vision, Parallel Processing for Data Analytics</p>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#resume">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
         </div>
-        <div class="education-entry">
-            <h3>University of Pune, Pune, India</h3>
-            <p>May 2020</p>
-            <p>Bachelor of Engineering in Electronics and Telecommunication</p>
-            <p>GPA: 9.1/10</p>
-            <p>Relevant Courses: Signal Processing, Data Structures and Algorithms, Internet of Things, Artificial Intelligence, Machine Learning</p>
-        </div>
-    </section>
+    </div>
+</nav>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="experience-entry">
+<!-- About Section -->
+<section id="about" class="py-5">
+    <div class="container">
+        <h2 class="section-header">About Me</h2>
+        <div class="section-content">
+            <p>
+
+                As a Master's candidate in Electrical and Computer Engineering at Northeastern University with a concentration in Computer Vision and Machine Learning Algorithms, I have a strong technical foundation in programming languages such as Python, C, C++, SQL, and MATLAB. My expertise in libraries and frameworks such as Pandas, NumPy, OpenCV, Tensorflow, Keras, and PySpark has allowed me to deliver meaningful results in various projects and work experiences.
+
+                I have hands-on experience in developing and deploying machine learning pipelines, performing data analysis and visualization, building POC applications for various ML use cases. At Accenture, I worked as an Application Developer with role into Machine Learning Ops and Python Developer, where I collaborated with cross-functional teams on various projects.
+                
+                I am available for work starting July 2024 and eager to bring my skills and passion for problem-solving to organizations looking for motivated and talented engineers.
+                </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Work Experience Section -->
+<section id="experience" class="py-5">
+    <div class="container">
+        <h2 class="section-header">Work Experience</h2>
+        <div class="section-content">
+            <h3>KEMPER INSURANCE, Chicago, IL</h3>
+            <p>Data Scientist, Intern</p>
+            <p>June 2023 - December 2023</p>
+            <ul>
+                <li>Led a data science initiative to analyze First Call Resolution rates and repeat caller analysis among call center representatives, providing multiple views to be used as a learning tool by supervisors and senior management.</li>
+                <li>Developed ETL pipelines for extracting and transforming relevant data using SQL and Snowflake python connector, established a daily batch process for algorithm execution, ensuring continuous data updates.</li>
+                <li>Built dashboards utilizing Tableau Desktop to craft relevant visualizations, aligning with the team's existing templates.</li>
+                <li>Collaborated with a senior data engineer to build data pipelines for tracking the customer journey for D2C team utilizing data from Microsoft Dynamics 365 CRM tool to analyze customer contact events to calculate lead scores.</li>
+                <li>Developed ML models utilizing grid search for hyperparameter tuning to classify customers into high-conversion customer profiles who purchased high premium policies for targeted advertising and sales calls.</li>
+            </ul>
+        </div>
+        <div class="section-content">
             <h3>ACCENTURE, Pune, India</h3>
             <p>Machine Learning Application Developer</p>
             <p>January 2021 - August 2022</p>
             <ul>
+                <li>Implemented ensemble ML models such as Random Forest, Boosted Trees, Light Gradient Boosting Machine for energy demand forecast prediction, using these model’s recommendations the green power utilization potential increased from 78% to 95% resulting in cost savings of about $171K.</li>
+                <li>Developed and maintained Machine Learning pipelines, containerized the app on Docker and deployed it.</li>
+                <li>Developed ETL pipeline, performed data cleaning, and set up experiments for testing multiple clustering strategies for a vehicle scheduling application for a transport sustainability project.</li>
+                <li>Utilized Power BI to visualize and analyze summary statistics data, creating interactive visualizations and dashboards.</li>
+                <li>Deployed machine learning models on AWS Sagemaker as an endpoint using Sagemaker Notebook Instance, developed APIs to fetch prediction values from the said endpoint, set up AWS infrastructure using Terraform and AWS CloudFormation.</li>
+                <li>Built and deployed POC for multiple machine learning applications as a Flask framework web app on multiple cloud infrastructures like Azure App service and on AWS Fargate cluster using Azure DevOps Pipeline.</li>
             </ul>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Add sections for Academic Projects and Technical Skills here -->
 
-    <footer>
-        <p>&copy; 2023 Harshit Sampgaon</p>
-    </footer>
+<!-- Education Section -->
+<!-- <section id="education" class="py-5">
+    <div class="container">
+        <h2 class="section-header">Education</h2>
+        <div class="section-content">
+            <h3>Northeastern University, Boston, MA</h3>
+            <p>Master of Science in Electrical and Computer Engineering</p>
+            <p>GPA: 4.0/4.0</p>
+            <p>Concentration: Computer Vision and Machine Learning Algorithms</p>
+            <p>Relevant Courses: Algorithms, Machine Learning, Computer Vision, Parallel Processing for Data Analytics</p>
+            <p>July 2024</p>
+        </div>
+        <div class="section-content">
+            <h3>University of Pune, Pune, India</h3>
+            <p>Bachelor of Engineering in Electronics and Telecommunication</p>
+            <p>GPA: 9.1/10</p>
+            <p>May 2020</p>
+        </div>
+    </div>
+</section> -->
+<!-- Education Section -->
+<section id="education" class="py-5">
+    <div class="container">
+        <h2 class="section-header">Education</h2>
+        <!-- Education Entry 1 -->
+        <div class="section-content">
+            <div class="row">
+                <div class="col-md-8">
+                    <h3>Northeastern University, Boston, MA</h3>
+                    <p>Master of Science in Electrical and Computer Engineering</p>
+                    <p>Concentration: Computer Vision and Machine Learning Algorithms</p>
+                    <p>Relevant Courses: Algorithms, Machine Learning, Computer Vision, Parallel Processing for Data Analytics</p>
+                </div>
+                <div class="col-md-4 text-right">
+                    <p>July 2024</p>
+                    <p>GPA: 4.0/4.0</p>
+                </div>
+            </div>
+        </div>
+        <!-- Education Entry 2 -->
+        <div class="section-content">
+            <div class="row">
+                <div class="col-md-8">
+                    <h3>University of Pune, Pune, India</h3>
+                    <p>Bachelor of Engineering in Electronics and Telecommunication</p>
+                    <p>Relevant Courses: Signal Processing, Data Structures and Algorithms, Internet of Things, Artificial Intelligence, Machine Learning</p>
+                </div>
+                <div class="col-md-4 text-right">
+                    <p>May 2020</p>
+                    <p>GPA: 9.1/10</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Projects Section -->
+<!-- <section id="projects" class="py-5">
+    <div class="container">
+        <h2 class="section-header">Projects</h2>
+        <div class="section-content">
+            <h3>MACHINE LEARNING & DATA ANALYTICS ON DISTRIBUTED CLUSTER</h3>
+            <p>Utilized PySpark to handle the large-scale movielens dataset of 4.5 million data points on Northeastern University's "Discovery Distributed Cluster" for the development and implementation of matrix factorization techniques for recommender systems.</p>
+            <p>Implemented cross-validation techniques to ensure robustness, experimented with dimensionality and regularization parameters lamda and mu to achieve a low test RMSE of 1.98.</p>
+            <p>Implemented parallel linear and logistic regression models with backtracking line search, reducing computation time by 50%.</p>
+            <p>January 2023 – March 2023</p>
+        </div>
+        <div class="section-content">
+            <h3>DRY BEANS CHALLENGE, Northeastern University</h3>
+            <p>Conducted exploratory data analysis (EDA), visualized data for feature importance, and performed correlation analysis.</p>
+            <p>Handled data imbalance, trained multiple models, including naïve bayes, decision trees, random forest, MLP, and a few gradient boosting techniques like XGBoost and LightGBM to obtain a mean accuracy of 96.1%</p>
+            <p>November 2022 – December 2022</p>
+        </div>
+        <div class="section-content">
+            <h3>SMART SURVEILLANCE FOR FIREARM DETECTION, University of Pune</h3>
+            <p>Implemented a deep learning model for object detection of firearms in a video stream using TensorFlow with 85% accuracy.</p>
+            <p>Collaborated with the team to integrate the model into a live video feed stream utilizing RTSP, developed a GUI for the app using PyQT.</p>
+            <p>December 2019 - March 2020</p>
+        </div>
+    </div>
+</section> -->
+<!-- Projects Section -->
+<!-- Projects Section -->
+<section id="projects" class="py-5">
+    <div class="container">
+        <h2 class="section-header">Projects</h2>
+        <div class="section-content">
+            <!-- Project 1 -->
+            <div class="row">
+                <div class="col-md-8">
+                    <h3>MACHINE LEARNING & DATA ANALYTICS ON DISTRIBUTED CLUSTER</h3>
+                </div>
+                <div class="col-md-4 text-right">
+                    <p>January 2023 – March 2023</p>
+                </div>
+                <div class="col-md-12">
+                    <ul>
+                        <li>Utilized PySpark to handle the large-scale movielens dataset of 4.5 million data points on Northeastern University's "Discovery Distributed Cluster" for the development and implementation of matrix factorization techniques for recommender systems.</li>
+                        <li>Implemented cross-validation techniques to ensure robustness, experimented with dimensionality and regularization parameters lamda and mu to achieve a low test RMSE of 1.98.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="row">
+                <div class="col-md-8">
+                    <h3>DRY BEANS CHALLENGE, Northeastern University</h3>
+                </div>
+                <div class="col-md-4 text-right">
+                    <p>November 2022 – December 2022</p>
+                </div>
+                <div class="col-md-12">
+                    <ul>
+                        <li>Conducted exploratory data analysis (EDA), visualized data for feature importance, and performed correlation analysis.</li>
+                        <li>Handled data imbalance, trained multiple models, including naïve bayes, decision trees, random forest, MLP, and a few gradient boosting techniques like XGBoost and LightGBM to obtain a mean accuracy of 96.1%.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="row">
+                <div class="col-md-8">
+                    <h3>SMART SURVEILLANCE FOR FIREARM DETECTION, University of Pune</h3>
+                </div>
+                <div class="col-md-4 text-right">
+                    <p>December 2019 - March 2020</p>
+                </div>
+                <div class="col-md-12">
+                    <ul>
+                        <li>Implemented a deep learning model for object detection of firearms in a video stream using TensorFlow with 85% accuracy.</li>
+                        <li>Collaborated with the team to integrate the model into a live video feed stream utilizing RTSP, developed a GUI for the app using PyQT.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Project 4 (New) -->
+            <div class="row">
+                <div class="col-md-8">
+                    <h3>QUORA QUESTION PAIRS, Independent Project</h3>
+                </div>
+                <div class="col-md-4 text-right">
+                    <p>December 2022 - January 2023</p>
+                </div>
+                <div class="col-md-12">
+                    <ul>
+                        <li>Implemented a pipeline for the Natural Language Processing challenge of text preprocessing by performing tasks such as tokenization, stop-word removal, stemming, and data cleaning.</li>
+                        <li>Generated feature vectors using BOW representations and applied machine learning algorithms such as Logistic Regression and Random Forest, achieving an accuracy of 80% when testing on unseen data.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- Skills Section -->
+<!-- Skills Section -->
+<section id="skills" class="py-5">
+    <div class="container">
+        <h2 class="section-header">Skills</h2>
+        <div class="section-content">
+            <h4>Programming Languages</h4>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://www.python.org/static/community_logos/python-logo.png" alt="Python" >
+                    <!-- <p>Python</p> -->
+                </div>
+                <div class="col-md-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/800px-R_logo.svg.png" alt="R" width="100" height="100">
+                    <!-- <p>Skill 2 Description</p> -->
+                </div>
+                <div class="col-md-4">
+                    <img src="https://db.cs.uni-tuebingen.de/teaching/ws2223/sql-is-a-programming-language/logo.svg" alt="SQL" width="100" height="100">
+                    <!-- <p>Skill 3 Description</p> -->
+                </div>
+            </div>
+            <!-- <h4>Programming Languages</h4> -->
+
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Scala-full-color.svg" alt="Scala" width="150" height="150">
+                    <!-- <p>Skill 4 Description</p> -->
+                </div>
+                <div class="col-md-4">
+                    <img src="https://1000logos.net/wp-content/uploads/2021/04/MATLAB-logo.png" alt="MATLAB" width="150" height="150">
+                    <!-- <p>Skill 5 Description</p> -->
+                </div>
+                <div class="col-md-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="C++" width="100" height="100">
+                    <!-- <p>Skill 6 Description</p> -->
+                </div>
+            </div>
+            <p>Libraries and Frameworks: Pandas, NumPy, OpenCV, TensorFlow, Keras, PyTorch, Docker, PyQt, Plotly, Seaborn, Matplotlib, PySpark, Terraform, AWS, GCP, Azure, Flask, Django, PowerBI, Tableau.</p>
+
+        </div>
+    </div>
+</section>
+
+<!-- <section id="skills" class="py-5">
+    <div class="container">
+        <h2 class="section-header">Skills</h2>
+        <div class="section-content">
+            <p>Programming Languages: Python, R, C, C++, SQL, Scala, MATLAB.</p>
+            <p>Libraries and Frameworks: Pandas, NumPy, OpenCV, TensorFlow, Keras, PyTorch, Docker, PyQt, Plotly, Seaborn, Matplotlib, PySpark, Terraform, AWS, GCP, Azure, Flask, Django, PowerBI, Tableau.</p>
+        </div>
+    </div>
+</section> -->
+
+<!-- Resume Section -->
+<section id="resume" class="py-5">
+    <div class="container">
+        <h2 class="section-header">Resume</h2>
+        <div class="section-content">
+            <p>Available for full-time positions starting July 2024.</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/harshitsampgaon">https://www.linkedin.com/in/harshitsampgaon</a></p>
+            <p>GitHub: <a href="https://github.com/hrs19">https://github.com/hrs19</a></p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <h2 class="section-header">Contact</h2>
+        <div class="section-content">
+            <p>Email: sampgaon.h@northeastern.edu</p>
+            <p>Phone: (857) 376-1224</p>
+        </div>
+    </div>
+</section>
+
+<!-- Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
