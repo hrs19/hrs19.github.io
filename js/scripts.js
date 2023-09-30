@@ -31,4 +31,21 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    const themeToggleButton = document.getElementById("theme-toggle-button");
+    const body = document.body;
+
+    themeToggleButton.addEventListener("click", () => {
+        // Toggle the dark-theme class on the body
+        body.classList.toggle("dark-theme");
+
+        // Toggle the CSS variables for light and dark themes
+        const root = document.documentElement;
+        if (body.classList.contains("dark-theme")) {
+            root.style.setProperty("--bs-background-color", "black");
+            // Add more CSS variable changes for dark theme here
+        } else {
+            root.style.setProperty("--bs-background-color", "white");
+            // Add more CSS variable changes for light theme here
+        }
+    });
 });
