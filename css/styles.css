@@ -10957,6 +10957,23 @@ section.resume-section .resume-section-content {
   width: 100%;
 }
 
+section.resume-section .resume-section-content .certification-row{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+section.resume-section .resume-section-content .certification{
+  flex: 1;
+  max-width: 30%; /* Adjust the maximum width as needed */
+  text-align: center;
+}
+
+section.resume-section .resume-section-content .certification img{
+  max-width: 100%;
+  height: auto;
+}
+
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
