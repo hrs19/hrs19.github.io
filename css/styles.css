@@ -11131,35 +11131,3 @@ section.resume-section .resume-section-content .certification img{
   }
 }
 
-.experience-container {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.experience-date {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  white-space: nowrap;
-}
-
-.experience-title {
-  margin-top: 40px; /* Adjust to avoid overlap with the date */
-}
-
-@media screen and (max-width: 768px) {
-  .experience-container {
-      padding: 20px;
-  }
-
-  .experience-date {
-      position: static;
-      margin-bottom: 10px;
-      text-align: left; /* Align date to the left for better readability */
-  }
-
-  .experience-title {
-      margin-top: 0; /* Remove extra space above the title for smaller screens */
-  }
-}
